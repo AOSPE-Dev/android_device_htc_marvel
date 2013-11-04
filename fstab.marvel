@@ -10,8 +10,8 @@ cache                        /cache                yaffs2        nosuid,nodev   
 userdata                /data                yaffs2        nosuid,nodev                wait
 misc                        /misc                mtd        defaults
 recovery                /recovery        mtd        defaults
-/devices/platform/goldfish_mmc.0 /storage/sdcard vfat defaults voldmanaged=sdcard:auto 
-/devices/platform/msm_sdcc.2/mmc_host/mmc1 /storage/sdcard0 vfat defaults # not sure of this line
+/dev/block/mmcblk0p1        /sdcard                auto        defaults   
+/dev/block/mmcblk0p2        /sd-ext                auto        defaults   
 
 # Here is the old line of vold.fstab, if needed :
 # dev_mount sdcard /storage/sdcard0 auto /devices/platform/goldfish_mmc.0 /devices/platform/msm_sdcc.2/mmc_host/mmc1
