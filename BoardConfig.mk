@@ -26,6 +26,7 @@
 TARGET_BOOTLOADER_BOARD_NAME := marvel
 TARGET_DEVICE := marvel
 TARGET_CPU_ABI := armeabi
+TARGET_RECOVERY_FSTAB := device/htc/marvel/fstab.marvel
 
 ### Compass
 BOARD_VENDOR_COMPASS_HARDWARE := akm8975
