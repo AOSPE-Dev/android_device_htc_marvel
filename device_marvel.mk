@@ -35,11 +35,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml
 
-### Mount fstab
-PRODUCT_COPY_FILES += \
-    device/htc/marvel/fstab.marvel:system/etc/fstab.marvel
-
-
 ### Keylayouts
 PRODUCT_COPY_FILES += \
     device/htc/marvel/key/marvel-keypad.kl:system/usr/keylayout/marvel-keypad.kl \
@@ -55,6 +50,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/marvel/init.marvel.rc:root/init.marvel.rc \
     device/htc/marvel/ueventd.marvel.rc:root/ueventd.marvel.rc
+
+# fstab
+PRODUCT_COPY_FILES += \
+	$(LOCAL_PATH)/fstab.marvel:root/fstab.marvel
 
 # For emmc phone storage
 PRODUCT_PROPERTY_OVERRIDES += \
