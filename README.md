@@ -1,9 +1,10 @@
 Device configuration for HTC Wildfire S a510e/ Marvel
 
 based on Andreas Schneider sources
+and
+OWL Project
 
+-----------
 
-==========
-Edit by OWL Project
-
+modified by Marvellous team
 
