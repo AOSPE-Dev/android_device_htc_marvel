@@ -26,7 +26,7 @@
 TARGET_BOOTLOADER_BOARD_NAME := marvel
 TARGET_DEVICE := marvel
 TARGET_CPU_ABI := armeabi
-TARGET_RECOVERY_FSTAB := device/htc/marvel/fstab.marvel
+TARGET_RECOVERY_FSTAB := device/htc/marvel/ramdisk/fstab.marvel
 
 ### Compass
 BOARD_VENDOR_COMPASS_HARDWARE := akm8975
@@ -35,7 +35,7 @@ BOARD_VENDOR_COMPASS_HARDWARE := akm8975
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
 BOARD_KERNEL_BASE := 0x12c00000
 BOARD_KERNEL_PAGESIZE := 2048
-# experimental - BOARD_CMDLINE := device/htc/marvel/cmdline.txt
+BOARD_CMDLINE := device/htc/marvel/cmdline.txt
 
 ### Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 3624192
