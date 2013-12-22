@@ -60,12 +60,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.phone_storage=0
 
-### Add additional packages
-PRODUCT_PACKAGES += \
-    Email2 \
-    Exchange2 \
-    Torch
-
 # Add device specific modules ## Build for now from msm7x27-common
 #PRODUCT_PACKAGES += \
 #    gps.marvel \
