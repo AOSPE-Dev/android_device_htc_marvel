@@ -14,7 +14,7 @@ Copyright (C) 2013 XDA users
 
 * Description
 
-  This repository is for CM10.1 on HTC marvel.
+  This repository is for CM11 on HTC marvel.
   It is still a work in progress.
 
 
@@ -40,27 +40,9 @@ Copyright (C) 2013 XDA users
 
   - Do repo init & sync
 
-  $ repo init -u git://github.com/CyanogenMod/android.git -b ics
+  $ repo init -u git://github.com/cm-11-marvel/android.git -b cm-11.0
 
-
-  - Create .repo/local_manifest.xml with the following content:
-
-  <?xml version="1.0" encoding="UTF-8"?>
-  <manifest>
-      <remote  name="cryptomilk"
-               fetch="git://git.cryptomilk.org/" />
-
-      <project name="projects/marvel/kernel_htc_msm7227.git" path="kernel/htc/msm7227" remote="cryptomilk" />
-      <project name="CyanogenMod/android_device_htc_common" path="device/htc/common" revision="refs/heads/gingerbread" />
-      <project name="projects/marvel/android_device_htc_msm7x27-recovery.git" path="device/htc/msm7x27-recovery" remote="cryptomilk" />
-      <project name="projects/marvel/android_device_htc_msm7x27-common.git" path="device/htc/msm7x27-common" remote="cryptomilk" />
-      <project name="projects/marvel/android_device_htc_marvel-common.git" path="device/htc/marvel-common" remote="cryptomilk" />
-      <project name="projects/marvel/android_device_htc_marvel.git" path="device/htc/marvel" remote="cryptomilk" />
-      <project name="projects/marvel/android_vendor_qcom_msm7x27.git" path="vendor/qcom/msm7x27" remote="cryptomilk" />
-      <project name="projects/marvel/android_vendor_htc_marvel.git" path="vendor/htc/marvel" remote="cryptomilk" />
-  </manifest>
-
-  $ repo sync
+  $ repo sync -f
 
 
   - Setup vendor
@@ -71,10 +53,10 @@ Copyright (C) 2013 XDA users
   - Setup environment
 
   $ source build/envsetup.sh
-  $ lunch cm_marvel-eng
+  $ lunch cm_marvel-userdebug
 
 
-  - Build CM9
+  - Build CM11
 
   $ export USE_CCACHE=1
   $ make -j4 bacon
