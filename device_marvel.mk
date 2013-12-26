@@ -60,11 +60,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.phone_storage=0
 
-# Add device specific modules ## Build for now from msm7x27-common
-#PRODUCT_PACKAGES += \
-#    gps.marvel \
-#    librpc
-
 ## Get non-open-source GSM-specific aspects if available
 $(call inherit-product-if-exists, vendor/htc/marvel/marvel-vendor.mk)
 
