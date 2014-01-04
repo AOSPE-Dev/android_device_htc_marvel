@@ -36,7 +36,7 @@ BOARD_VENDOR_COMPASS_HARDWARE := akm8975
 BOARD_KERNEL_CMDLINE := no_console_suspend=1 console=null
 BOARD_KERNEL_BASE := 0x12c00000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_CMDLINE := board_marvel.disable_uart3=0 board_marvel.usb_h2w_sw=0 board_marvel.disable_sdcard=0 diag.enabled=0 board_marvel.debug_uart=0 smisize=0 userdata_sel=0 androidboot.emmc=false androidboot.pagesize=2048 androidboot.batt_poweron=good_battery androidboot.mid=PG7610000 androidboot.keycaps=qwertz androidboot.mode=normal zygote_oneshot=off kmemleak=off no_console_suspend=1 console=null
+# BOARD_CMDLINE := board_marvel.disable_uart3=0 board_marvel.usb_h2w_sw=0 board_marvel.disable_sdcard=0 diag.enabled=0 board_marvel.debug_uart=0 smisize=0 userdata_sel=0 androidboot.emmc=false androidboot.pagesize=2048 androidboot.batt_poweron=good_battery androidboot.mid=PG7610000 androidboot.keycaps=qwertz androidboot.mode=normal zygote_oneshot=off kmemleak=off no_console_suspend=1 console=null
 
 ### Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 3824192
