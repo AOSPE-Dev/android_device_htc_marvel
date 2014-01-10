@@ -64,10 +64,6 @@ on early-fs
 on fs
     mount_all /fstab.marvel
 
-on boot
-    mount debugfs /sys/kernel/debug /sys/kernel/debug
-
-
 on init
     mount rootfs rootfs / remount
     mkdir /app-cache 01777 system system
