@@ -63,6 +63,13 @@ on early-fs
 
 on fs
     mount_all /fstab.marvel
+    
+on boot
+    mount debugfs /sys/kernel/debug /sys/kernel/debug
+    chmod 666 /proc/cmdline
+    
+# Start ADB before init so we can see errors    
+    start adbd
 
 on init
     mount rootfs rootfs / remount
