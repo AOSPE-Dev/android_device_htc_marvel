@@ -54,11 +54,15 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/htc/marvel/ramdisk/init.marvel.rc:root/init.marvel.rc \
     device/htc/marvel/ramdisk/ueventd.marvel.rc:root/ueventd.marvel.rc \
-	device/htc/marvel/ramdisk/fstab.marvel:root/fstab.marvel
+	device/htc/marvel/ramdisk/fstab.marvel:root/fstab.qcom
 
 # For emmc phone storage
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.phone_storage=0
+
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    ro.secure=0
+    ro.adb.secure=0
 
 ## Get non-open-source GSM-specific aspects if available
 $(call inherit-product-if-exists, vendor/htc/marvel/marvel-vendor.mk)

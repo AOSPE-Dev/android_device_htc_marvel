@@ -79,5 +79,3 @@ ro.ril.update.acoustic.table = 1
 ###################
 persist.sys.usb.config=mass_storage,adb
 persist.service.adb.enable=1
-ro.adb.secure=0
-ro.secure=0
