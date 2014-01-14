@@ -26,7 +26,7 @@
 TARGET_BOOTLOADER_BOARD_NAME := marvel
 TARGET_DEVICE := marvel
 TARGET_CPU_ABI := armeabi
-TARGET_RECOVERY_FSTAB := device/htc/marvel/ramdisk/fstab.marvel
+TARGET_RECOVERY_FSTAB := device/htc/marvel/ramdisk/fstab.qcom
 RECOVERY_FSTAB_VERSION := 2
 
 ### Compass

@@ -25,8 +25,7 @@
 /dev/oncrpc/*             0660   system     radio
 
 # Bluetooth
-/dev/ttyHS0               0660  bluetooth bluetooth
-/dev/uinput               0660  system bluetooth 
+/dev/ttyHS0               0600   bluetooth  bluetooth
 
 # USB
 /dev/ttyHSUSB0            0600   system     system
