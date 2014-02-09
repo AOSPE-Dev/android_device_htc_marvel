@@ -49,6 +49,9 @@ PRODUCT_COPY_FILES += \
 ## Temp fix for Akmd
 PRODUCT_COPY_FILES += \
     device/htc/marvel/bin/linker:system/bin/linker
+    
+# Dalvik heap config for devices with 512MB memory
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 # For emmc phone storage
 PRODUCT_PROPERTY_OVERRIDES += \
